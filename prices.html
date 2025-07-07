@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoMK - Precios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="prices.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/H3RBASS/JaguarCRM/refs/heads/main/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/H3RBASS/JaguarCRM/blob/main/favicon/apple-touch-icon.png?raw=true">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html"><img src="https://github.com/H3RBASS/JaguarCRM/blob/main/favicon/web-app-manifest-192x192.png?raw=true" alt="JaguarCRM" class="logo"></a>
+            <nav class="nav-menu">
+                <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+NexoMk&type=phone_number&app_absent=0" class="nav-link" target="_blank">Contacto</a>
+                <a href="https://app.jaguarcrm360.com/signup" class="btn btn-secondary">Prueba Gratis</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="pricing-container">
+            <div class="section-title">
+                <h2>Planes a medida para tu negocio</h2>
+                <p>Elige el plan que mejor se adapte a tus necesidades y escala con nosotros</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span>Mensual</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Anual <span class="discount-badge">20% de descuento</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card" data-plan="basic">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <p>Perfecto para pequeñas empresas y emprendedores</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$10</span>
+                        <!-- <span class="period">/mes</span> -->
+                    </div>
+                    
+                    <div class="pricing-price annual-price hidden">
+                        <span class="price">$37</span>
+                        <!-- <span class="period">/mes</span> -->
+                        <span class="billed">Costo neto anualmente <strong>($447)</strong></span>
+                    </div>
+
+                    <!-- Selector de cantidad -->
+                    <div class="quantity-selector">
+                        <label for="quantity-basic">Cantidad:</label>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" data-plan="basic">-</button>
+                            <input type="number" id="quantity-basic" class="quantity-input" value="1" min="1" data-plan="basic">
+                            <button class="quantity-btn plus" data-plan="basic">+</button>
+                        </div>
+                        <div class="total-price">
+                            <span>Total: </span>
+                            <span class="total-amount" data-plan="basic">$41</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Licencia 1 mes</li>
+                        <li><i class="fas fa-check"></i> 2 Conexiónes</li>
+                        <li><i class="fas fa-check"></i> Todas las herramientas</li>
+                        <li><i class="fas fa-check"></i> Soporte por correo</li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+B%C3%A1sico%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-primary" id="basic-btn">Empezar ahora</a>
+                </div>
+
+                
+                
+                <!-- Plan Premium -->
+                <div class="pricing-card featured" data-plan="premium">
+                    <div class="popular-badge">Más popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p>Ideal para empresas en crecimiento</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$65</span>
+                        <!-- <span class="period">/mes</span> -->
+                    </div>
+                    
+                    <div class="pricing-price annual-price hidden">
+                        <span class="price">$86</span>
+                        <!-- <span class="period">/mes</span> -->
+                        <span class="billed">Costo neto anualmente <strong>($1032)</strong></span>
+                    </div>
+
+                    <!-- Selector de cantidad -->
+                    <div class="quantity-selector">
+                        <label for="quantity-premium">Cantidad:</label>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" data-plan="premium">-</button>
+                            <input type="number" id="quantity-premium" class="quantity-input" value="1" min="1" data-plan="premium">
+                            <button class="quantity-btn plus" data-plan="premium">+</button>
+                        </div>
+                        <div class="total-price">
+                            <span>Total: </span>
+                            <span class="total-amount" data-plan="premium">$97</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Licencia 1 año</li>
+                        <li><i class="fas fa-check"></i> 1 Conexión</li>
+                        <li><i class="fas fa-check"></i> Todas las herramientas</li>
+                        <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+Premium%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-secondary" id="premium-btn">Empezar ahora</a>
+                </div>
+            </div>
+            
+            <div class="enterprise-cta">
+                <p>¿Necesitas un plan personalizado para tu empresa?</p>
+                <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+NexoMk&type=phone_number&app_absent=0" class="btn btn-secondary" target="_blank">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle de precios
+            const pricingToggle = document.getElementById('pricingToggle');
+            const monthlyPrices = document.querySelectorAll('.monthly-price');
+            const annualPrices = document.querySelectorAll('.annual-price');
+            
+            // Precios base
+            const basePrices = {
+                basic: { monthly: 10, annual: 37 },
+                premium: { monthly: 65, annual: 86 }
+            };
+            
+            // Actualizar total y botón
+            function updatePlan(plan) {
+                const quantity = parseInt(document.querySelector(`#quantity-${plan}`).value);
+                const isAnnual = pricingToggle.checked;
+                const price = isAnnual ? basePrices[plan].annual : basePrices[plan].monthly;
+                const total = quantity * price;
+                
+                // Actualizar total mostrado
+                document.querySelector(`.total-amount[data-plan="${plan}"]`).textContent = `$${total}`;
+                
+                // Actualizar texto del botón
+                const btn = document.querySelector(`#${plan}-btn`);
+                if (quantity > 1) {
+                    btn.textContent = `Agregar ${quantity} licencias`;
+                    // Actualizar enlace de WhatsApp con la cantidad
+                    const planName = plan === 'basic' ? 'Básico' : 'Premium';
+                    btn.href = `https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+${planName}%2C+quisiera+contratar+${quantity}+membres%C3%ADas&type=phone_number&app_absent=0`;
+                } else {
+                    btn.textContent = 'Empezar ahora';
+                }
+            }
+            
+            // Manejar cambios en la cantidad
+            document.querySelectorAll('.quantity-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const plan = this.dataset.plan;
+                    const input = document.querySelector(`#quantity-${plan}`);
+                    let value = parseInt(input.value);
+                    
+                    if (this.classList.contains('minus') && value > 1) {
+                        value--;
+                    } else if (this.classList.contains('plus')) {
+                        value++;
+                    }
+                    
+                    input.value = value;
+                    updatePlan(plan);
+                });
+            });
+            
+            // Manejar cambios directos en el input
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', function() {
+                    const plan = this.dataset.plan;
+                    if (this.value < 1) this.value = 1;
+                    updatePlan(plan);
+                });
+            });
+            
+            // Manejar cambio en el toggle anual/mensual
+            pricingToggle.addEventListener('change', function() {
+                if(this.checked) {
+                    monthlyPrices.forEach(el => el.classList.add('hidden'));
+                    annualPrices.forEach(el => el.classList.remove('hidden'));
+                } else {
+                    monthlyPrices.forEach(el => el.classList.remove('hidden'));
+                    annualPrices.forEach(el => el.classList.add('hidden'));
+                }
+                
+                // Actualizar ambos planes
+                updatePlan('basic');
+                updatePlan('premium');
+            });
+            
+            // Inicializar
+            updatePlan('basic');
+            updatePlan('premium');
+        });
+    </script>
+</body>
+</html>
