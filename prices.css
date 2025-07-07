@@ -6,7 +6,7 @@
             --light: #E8F7F6;
             --dark: #0A1E2D;
             --darker: #071521;
-            --white: #374d5e;
+            --white: #ffffff;
             --gray: #6B7280;
             --light-gray: #F9FAFB;
             --border-radius: 12px;
@@ -218,7 +218,7 @@
         }
 
         .pricing-card {
-            background: var(--white);
+            background: var(--primary);
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
             padding: 2.5rem;
@@ -260,7 +260,7 @@
 
         .pricing-header h3 {
             font-size: 1.75rem;
-            color: var(--darker);
+            color: var(--light);
             margin-bottom: 0.5rem;
         }
 
@@ -281,7 +281,7 @@
         .pricing-price .price {
             font-size: 3.5rem;
             font-weight: 700;
-            color: var(--darker);
+            color: var(--light);
         }
 
         .pricing-price .period {
@@ -366,7 +366,7 @@
 
         .pricing-features li {
             margin-bottom: 1rem;
-            color: var(--gray);
+            color: var(--light);
             display: flex;
             align-items: flex-start;
         }
