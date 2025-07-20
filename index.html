@@ -12,6 +12,20 @@
     <!-- estilos logo mini -->
     <link rel="icon" href="https://raw.githubusercontent.com/H3RBASS/Nexo-MK-Page/refs/heads/main/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/H3RBASS/Nexo-MK-Page/blob/main/favicon/apple-touch-icon.png?raw=true">
+  <!-- cabecera pagina precios -->
+  
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoMK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="prices.css">
+    <!-- estilos logo mini -->
+    <link rel="icon" href="https://raw.githubusercontent.com/H3RBASS/Nexo-MK-Page/refs/heads/main/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/H3RBASS/Nexo-MK-Page/blob/main/favicon/apple-touch-icon.png?raw=true">
+  
 </head>
 <body>
     <!-- Header -->
@@ -92,6 +106,225 @@ Con NexoMK, vendes más con menos esfuerzo.</p>
             </div>
         </div>
     </section>
+  
+  
+  
+   <!-- Header -->
+
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="pricing-container">
+            <div class="section-title">
+                <h2>Planes a medida para tu negocio</h2>
+                <p>Elige el plan que mejor se adapte a tus necesidades y escala con nosotros</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card" data-plan="basic">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <p>Perfecto para pequeñas empresas y emprendedores</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$10</span>
+                    </div>
+                    
+                    <!-- Selector de cantidad -->
+                    <div class="quantity-selector">
+                        <label for="quantity-basic">Cantidad:</label>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" data-plan="basic">-</button>
+                            <input type="number" id="quantity-basic" class="quantity-input" value="0" min="0" data-plan="basic">
+                            <button class="quantity-btn plus" data-plan="basic">+</button>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Licencia 1 mes</li>
+                        <li><i class="fas fa-check"></i> 2 Conexiónes</li>
+                        <li><i class="fas fa-check"></i> Todas las herramientas</li>
+                        <li><i class="fas fa-check"></i> Soporte por correo</li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+B%C3%A1sico%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-primary" id="basic-btn">Empezar ahora</a>
+                </div>
+                
+                <!-- Plan Premium -->
+                <div class="pricing-card featured" data-plan="premium">
+                    <div class="popular-badge">Más popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p>Ideal para empresas en crecimiento</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$65</span>
+                    </div>
+
+                    <!-- Selector de cantidad -->
+                    <div class="quantity-selector">
+                        <label for="quantity-premium">Cantidad:</label>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" data-plan="premium">-</button>
+                            <input type="number" id="quantity-premium" class="quantity-input" value="0" min="0" data-plan="premium">
+                            <button class="quantity-btn plus" data-plan="premium">+</button>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Licencia 1 año</li>
+                        <li><i class="fas fa-check"></i> 1 Conexión</li>
+                        <li><i class="fas fa-check"></i> Todas las herramientas</li>
+                        <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                        <li><i class="fas fa-check"></i> Capacitacion personalizada</li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+Premium%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-secondary" id="premium-btn">Empezar ahora</a>
+                </div>
+                
+                <!-- Plan Empresarial -->
+                <div class="pricing-card" data-plan="enterprise">
+                    <div class="pricing-header">
+                        <h3>Regular</h3>
+                        <p>Para grandes empresas con necesidades avanzadas</p>
+                    </div>
+                    
+                    <div class="pricing-price monthly-price">
+                        <span class="price">$45</span>
+                    </div>
+
+                    <!-- Selector de cantidad -->
+                    <div class="quantity-selector">
+                        <label for="quantity-enterprise">Cantidad:</label>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" data-plan="enterprise">-</button>
+                            <input type="number" id="quantity-enterprise" class="quantity-input" value="0" min="0" data-plan="enterprise">
+                            <button class="quantity-btn plus" data-plan="enterprise">+</button>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Licencia 6 Meses</li>
+                        <li><i class="fas fa-check"></i> 1 Conexión</li>
+                        <li><i class="fas fa-check"></i> Todas las herramientas</li>
+                        <li><i class="fas fa-check"></i> Soporte estandar</li>
+                    </ul>
+                    
+                    <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+Empresarial%2C+quisiera+contratar+una+membres%C3%ADa&type=phone_number&app_absent=0" class="btn btn-primary" id="enterprise-btn">Empezar ahora</a>
+                </div>
+            </div>
+            
+            <!-- Resumen de totales -->
+            <div class="total-summary">
+                <h3>Resumen de tu selección</h3>
+                <div class="summary-total">
+                    Total a pagar: <span class="total-all" id="summary-total">$0</span>
+                </div>
+            </div>
+            
+            <div class="enterprise-cta">
+                <p>¿Necesitas un plan personalizado para tu empresa?</p>
+                <a href="https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+NexoMk&type=phone_number&app_absent=0" class="btn btn-secondary" target="_blank">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Precios base (solo mensuales, ya que no hay toggle anual/mensual)
+            const basePrices = {
+                basic: 10,
+                premium: 65,
+                enterprise: 45
+            };
+            
+            // Actualizar total y botón
+            function updatePlan(plan) {
+                const quantityInput = document.querySelector(`#quantity-${plan}`);
+                let quantity = parseInt(quantityInput.value);
+
+                // Asegurarse de que la cantidad mínima sea 1
+                if (quantity < 0) {
+                    quantity = 0;
+                    quantityInput.value = 0;
+                }
+                
+                const price = basePrices[plan];
+                const total = quantity * price;
+                
+                // Actualizar texto del botón y enlace de WhatsApp
+                const btn = document.querySelector(`#${plan}-btn`);
+                const planName = plan === 'basic' ? 'Básico' : 
+                                 plan === 'premium' ? 'Premium' : 'Regular'; // Cambiado de 'Empresarial' a 'Regular' según el HTML
+                
+                if (quantity > 1) {
+                    btn.textContent = `Agregar ${quantity} licencias ($${total})`;
+                    btn.href = `https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+${planName}%2C+quisiera+contratar+${quantity}+membres%C3%ADas+por+un+total+de+%24${total}&type=phone_number&app_absent=0`;
+                } else {
+                    btn.textContent = `Empezar ahora ($${total})`;
+                    btn.href = `https://api.whatsapp.com/send/?phone=59178202929&text=Hola%2C+me+interesa+el+plan+${planName}%2C+quisiera+contratar+una+membres%C3%ADa+por+%24${total}&type=phone_number&app_absent=0`;
+                }
+
+                // Actualizar el precio mostrado en la tarjeta (opcional, si se desea mostrar el total por tarjeta)
+                // No hay un elemento específico para el total por tarjeta en el HTML actual,
+                // así que esta parte se omite o se podría añadir un span para ello.
+                // Por ahora, solo se actualiza el total general.
+
+                // Actualizar total general
+                updateTotal();
+            }
+            
+            // Actualizar total general
+            function updateTotal() {
+                let grandTotal = 0;
+                document.querySelectorAll('.quantity-input').forEach(input => {
+                    const plan = input.dataset.plan;
+                    const quantity = parseInt(input.value);
+                    const price = basePrices[plan];
+                    grandTotal += quantity * price;
+                });
+                document.querySelector('#summary-total').textContent = `$${grandTotal}`;
+            }
+            
+            // Manejar cambios en la cantidad
+            document.querySelectorAll('.quantity-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const plan = this.dataset.plan;
+                    const input = document.querySelector(`#quantity-${plan}`);
+                    let value = parseInt(input.value);
+                    
+                    if (this.classList.contains('minus')) {
+                        value = Math.max(0, value - 1); // Permite valores desde 0
+                    } else if (this.classList.contains('plus')) {
+                        value++;
+                    }
+                    
+                    input.value = value;
+                    updatePlan(plan);
+                });
+            });
+            
+            // Manejar cambios directos en el input
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                input.addEventListener('change', function() {
+                    const plan = this.dataset.plan;
+                    if (this.value < 0) this.value = 0; // Permite valores desde 0
+                    updatePlan(plan);
+                });
+            });
+            
+            // Inicializar todos los planes al cargar la página
+            // Esto calculará el total inicial basado en los valores por defecto (0 para cada plan)
+            updatePlan('basic');
+            updatePlan('premium');
+            updatePlan('enterprise');
+        });
+    </script>
+
+  
+
 
     <!-- CTA Section -->
     <section class="cta">
